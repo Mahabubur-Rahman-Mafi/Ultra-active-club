@@ -1,0 +1,15 @@
+.info-item{
+    width: 100%;
+    position: sticky;
+}
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+
+}
+
+.my-image{
+    width: 100% ;
+    border-radius: 100%;
+}

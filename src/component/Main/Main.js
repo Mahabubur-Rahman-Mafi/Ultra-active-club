@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../Activity/Activity";
 import logo from "../../images/logo.png";
+import Information from '../Information/Information'
 import "./Main.css";
 
 const Main = () => {
@@ -12,9 +13,9 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="container ">
+    <div className="container main-body">
       <div className="row">
-        <div className="col-12 col-md-7 col-lg-9 mt-5">
+        <div className="col-12 col-md-6 col-lg-9 mt-5">
           <div className="d-flex align-items-center">
             <img src={logo} className="img-fluid logo-img" alt="" />
             <h2 className="ms-1 mt-1 fs-1">Let's Play</h2>
@@ -27,8 +28,8 @@ const Main = () => {
             ))}
           </div>
         </div>
-        <div className="col-12 col-md-5 col-lg-3 mt-5">
-          <h1>information</h1>
+        <div className="col-12 col-md-6 col-lg-3  bg-info information-container">
+            <Information></Information>         
         </div>
       </div>
     </div>
