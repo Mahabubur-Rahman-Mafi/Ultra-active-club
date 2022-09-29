@@ -2,44 +2,51 @@
   {
     "id": "1",
     "name": "Online Games",
-    "time": 30,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/c408fb513f7d6386264a4d5010a9eec6"
+    "about":"A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
+    "time": 30,   
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441684/1_g4qtfi.jpg"
   },
   {
     "id": "2",
     "name": "Cricket",
     "time": 45,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/2ecbdc1b26d743abadc3a8036f300a01"
+    "about": "A Cricket game is a video game that is either partially or primarily played through the Internet or any other computer network available.",
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441634/7_x8eofr.jpg"
   },
 
   {
     "id": "3",
     "name": "FIFA",
+    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 20,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/9186e7cd63dccb3d201bfe35c32fafd1"
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441625/5_qulgoz.jpg"
   },
   {
     "id": "4",
     "name": "Football",
+    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 30,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/d662f4e872683d1f3366810142bdca6e"
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441620/6_zppafy.jpg"
   },
   {
     "id": "5",
     "name": "Tennis",
+    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 50,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/7b63ef254b7072d7ce9c719467f031a3"
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441619/4_vljtxk.jpg"
   },
   {
     "id": "6",
     "name": "PUBG",
+    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 15,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/5bf71b0656d9e933c8cae4de8e4e5451"
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441615/2_wtcwuw.jpg "
   },
   {
     "id": "7",
     "name": "Basket Ball",
+    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 26,
-    "img": "https://asset.cloudinary.com/dtwfvwjhw/81c214cbcb086047ce1b92ae9e4f43df"
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441605/3_j8zw24.jpg"
   }
 ]

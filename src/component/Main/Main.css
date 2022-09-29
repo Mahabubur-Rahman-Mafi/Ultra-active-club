@@ -1,0 +1,10 @@
+.logo-img{
+    width: 5%;
+    height: 5%;
+}
+
+.activity-contianer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
