@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "name": "Online Games",
+    "time": 30,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/c408fb513f7d6386264a4d5010a9eec6"
+  },
+  {
+    "id": "2",
+    "name": "Cricket",
+    "time": 45,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/2ecbdc1b26d743abadc3a8036f300a01"
+  },
+
+  {
+    "id": "3",
+    "name": "FIFA",
+    "time": 20,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/9186e7cd63dccb3d201bfe35c32fafd1"
+  },
+  {
+    "id": "4",
+    "name": "Football",
+    "time": 30,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/d662f4e872683d1f3366810142bdca6e"
+  },
+  {
+    "id": "5",
+    "name": "Tennis",
+    "time": 50,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/7b63ef254b7072d7ce9c719467f031a3"
+  },
+  {
+    "id": "6",
+    "name": "PUBG",
+    "time": 15,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/5bf71b0656d9e933c8cae4de8e4e5451"
+  },
+  {
+    "id": "7",
+    "name": "Basket Ball",
+    "time": 26,
+    "img": "https://asset.cloudinary.com/dtwfvwjhw/81c214cbcb086047ce1b92ae9e4f43df"
+  }
+]
