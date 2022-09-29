@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import image from "../../images/pro.jpg";
 import "./Information.css";
 
 const Information = ({ playing }) => {
-  let total;
-  for (const play of playing) {
-    console.log(play.time);
+  const [btime, setBtime] = useState();
+  const handleButton = (event) => {
+    const text = event.target.innerText;
+    setBtime(text);
+  };
+
+  let total = 0;
+
+  playing.map((play) => {
     total = play.time + total;
-  }
-  playing.map(play => {
-    console.log(play);
-  })
+  });
   return (
-    
     <div className="info-item text-white">
       <h1 className="mt-5 text-center"> Information</h1>
       {/* about me section  */}
@@ -39,19 +41,34 @@ const Information = ({ playing }) => {
         <h3>Add a break</h3>
         <hr className="border border-2"></hr>
         <div className="d-flex justify-content-between mt-2  p-2 rounded-3">
-          <button className="btn p-2 fs-6 fw-semibold rounded-3 text-light  btn-outline-warning border border-2">
+          <button
+            className="btn p-2 fs-6 fw-semibold rounded-3 btn-outline-light border border-2"
+            onClick={(event) => handleButton(event)}
+          >
             10
           </button>
-          <button className="btn p-2 fs-6 fw-semibold rounded-3 text-light  btn-outline-warning border border-2">
+          <button
+            className="btn p-2 fs-6 fw-semibold rounded-3 btn-outline-light border border-2"
+            onClick={(event) => handleButton(event)}
+          >
             15
           </button>
-          <button className="btn p-2 fs-6 fw-semibold rounded-3 text-light  btn-outline-warning border border-2">
+          <button
+            className="btn p-2 fs-6 fw-semibold rounded-3 btn-outline-light border border-2"
+            onClick={(event) => handleButton(event)}
+          >
             20
           </button>
-          <button className="btn p-2 fs-6 fw-semibold rounded-3 text-light  btn-outline-warning border border-2">
+          <button
+            className="btn p-2 fs-6 fw-semibold rounded-3 btn-outline-light border border-2"
+            onClick={(event) => handleButton(event)}
+          >
             25
           </button>
-          <button className="btn p-2 fs-6 fw-semibold rounded-3 text-light  btn-outline-warning border border-2">
+          <button
+            className="btn p-2 fs-6 fw-semibold rounded-3 btn-outline-light border border-2"
+            onClick={(event) => handleButton(event)}
+          >
             30
           </button>
         </div>
@@ -62,12 +79,14 @@ const Information = ({ playing }) => {
       <div className="mt-5">
         <h3>Playing Time</h3>
         <hr className="border border-2"></hr>
-        <h5>Play Time: {total} </h5>
-        <h5>Break Time: </h5>
+        <h5>Play Time: {total} minutes </h5>
+        <h5>Break Time: {btime} minutes </h5>
       </div>
       {/* --...-- */}
 
-      <button className="btn btn-outline-light w-100 fs-5 activity-btn mt-5">Playing Completed</button>
+      <button className="btn btn-outline-light w-100 fs-5 activity-btn mt-5">
+        Playing Completed
+      </button>
     </div>
   );
 };

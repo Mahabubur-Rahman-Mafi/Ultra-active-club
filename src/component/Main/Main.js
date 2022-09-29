@@ -15,9 +15,10 @@ const Main = () => {
 
   const [playing, setPlaying] = useState([]);
   const addToTime = (act) => {
-    const newPlay = [...playing, act];
+    let newPlay = [...playing, act];
     setPlaying(newPlay);
   };
+
   return (
     <div className="container main-body">
       <div className="row">
