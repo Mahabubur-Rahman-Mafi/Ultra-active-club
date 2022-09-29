@@ -2,7 +2,6 @@ import React from "react";
 import './Activity.css'
 
 const Activity = (props) => {
-  console.log(props.activity);
   const { name, img, time , about} = props.activity;
   return (
     <div className="activity-card">
@@ -12,7 +11,7 @@ const Activity = (props) => {
                   <h3 class="card-text mb-2">{name}</h3>
                   <p>{about}</p>
           <h6 class="card-text mt-1">Play Time: {time} minutes</h6>
-          <button className="btn btn-outline-primary w-100  activity-btn mt-3">
+          <button className="btn btn-outline-primary w-100  activity-btn mt-3" onClick={ () => props.addToTime(props.activity)}>
             Want to Play
           </button>
         </div>

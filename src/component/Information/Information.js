@@ -4,8 +4,17 @@ import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import image from "../../images/pro.jpg";
 import "./Information.css";
 
-const Information = () => {
+const Information = ({ playing }) => {
+  let total;
+  for (const play of playing) {
+    console.log(play.time);
+    total = play.time + total;
+  }
+  playing.map(play => {
+    console.log(play);
+  })
   return (
+    
     <div className="info-item text-white">
       <h1 className="mt-5 text-center"> Information</h1>
       {/* about me section  */}
@@ -53,7 +62,7 @@ const Information = () => {
       <div className="mt-5">
         <h3>Playing Time</h3>
         <hr className="border border-2"></hr>
-        <h5>Play Time: </h5>
+        <h5>Play Time: {total} </h5>
         <h5>Break Time: </h5>
       </div>
       {/* --...-- */}

@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../Activity/Activity";
 import logo from "../../images/logo.png";
-import Information from '../Information/Information'
+import Information from "../Information/Information";
 import "./Main.css";
 
 const Main = () => {
   const [activities, setActivities] = useState([]);
+  
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setActivities(data));
   }, []);
 
+  const [playing, setPlaying] = useState([]);
+  const addToTime = (act) => {
+    const newPlay = [...playing, act];
+    setPlaying(newPlay);
+  };
   return (
     <div className="container main-body">
       <div className="row">
@@ -23,13 +29,16 @@ const Main = () => {
           <h4 className="mt-2 fs-4">Select Today Game</h4>
           <div className=" activity-contianer mt-4">
             {activities.map((activity) => (
-              //   console.log(activity);
-              <Activity key={activity.id} activity={activity}></Activity>
+              <Activity
+                key={activity.id}
+                addToTime={addToTime}
+                activity={activity}
+              ></Activity>
             ))}
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-3  bg-info information-container">
-            <Information></Information>         
+          <Information playing={playing}></Information>
         </div>
       </div>
     </div>
