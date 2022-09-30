@@ -3,6 +3,9 @@ import Activity from "../Activity/Activity";
 import logo from "../../images/logo.png";
 import Information from "../Information/Information";
 import "./Main.css";
+import { addTime } from "../../utility/database";
+
+
 
 const Main = () => {
   const [activities, setActivities] = useState([]);
@@ -13,10 +16,16 @@ const Main = () => {
       .then((data) => setActivities(data));
   }, []);
 
+
+
   const [playing, setPlaying] = useState([]);
+
+
   const addToTime = (act) => {
+
     let newPlay = [...playing, act];
     setPlaying(newPlay);
+    addTime(act.name)
   };
 
   return (

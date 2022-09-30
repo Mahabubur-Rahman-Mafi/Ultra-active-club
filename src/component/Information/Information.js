@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { addToDatabase, getSaveTime } from "../../utility/database";
 import image from "../../images/pro.jpg";
 import "./Information.css";
 
@@ -9,8 +10,13 @@ const Information = ({ playing }) => {
   const handleButton = (event) => {
     const text = event.target.innerText;
     setBtime(text);
+    addToDatabase(text);
   };
 
+  useEffect(() => {
+    const time = getSaveTime();
+    setBtime(time)
+  },[])
   let total = 0;
 
   playing.map((play) => {
