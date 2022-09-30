@@ -3,7 +3,15 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const ToasT = () => {
     const notify = () =>
-        toast("Wow so easy!");
+      toast.success("Yes!!! You did it", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     return (
       <div>
         <button
