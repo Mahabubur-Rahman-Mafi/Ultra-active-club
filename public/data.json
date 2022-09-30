@@ -36,17 +36,31 @@
     "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441619/4_vljtxk.jpg"
   },
   {
-    "id": "6",
-    "name": "PUBG",
-    "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
-    "time": 15,
-    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441615/2_wtcwuw.jpg "
-  },
-  {
     "id": "7",
     "name": "Basket Ball",
     "about": "A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.",
     "time": 26,
     "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664441605/3_j8zw24.jpg"
-  }
+  },
+  {
+    "id": "8",
+    "name": "How React Work?",
+    "about": "React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.",
+    "time": 3,
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664543124/react_peukxx.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Uses of useEffect",
+    "about": "The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments. The second argument is optional.",
+    "time": 2,
+    "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664543123/hook_zmarco.jpg"
+  },
+   {
+     "id": "9",
+     "name": "Props vs State",
+     "about": "Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.",
+     "time": 4,
+     "img": "https://res.cloudinary.com/dtwfvwjhw/image/upload/v1664543123/state_rru0xy.jpg"
+   }
 ]

@@ -5,6 +5,7 @@ import { addToDatabase, getSaveTime } from "../../utility/database";
 import image from "../../images/pro.jpg";
 import "./Information.css";
 import ToasT from "../Toast/ToasT";
+import Blog from "../Blog/Blog";
 
 const Information = (props) => {
   const{playing, notify} =props
@@ -95,6 +96,7 @@ const Information = (props) => {
 
       <div>
         <ToasT></ToasT>
+
       </div>
     </div>
   );
