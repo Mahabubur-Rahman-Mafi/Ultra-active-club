@@ -4,8 +4,10 @@ import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { addToDatabase, getSaveTime } from "../../utility/database";
 import image from "../../images/pro.jpg";
 import "./Information.css";
+import ToasT from "../Toast/ToasT";
 
-const Information = ({ playing }) => {
+const Information = (props) => {
+  const{playing, notify} =props
   const [btime, setBtime] = useState();
   const handleButton = (event) => {
     const text = event.target.innerText;
@@ -90,9 +92,10 @@ const Information = ({ playing }) => {
       </div>
       {/* --...-- */}
 
-      <button className="btn btn-outline-light w-100 fs-5 activity-btn mt-5">
-        Playing Completed
-      </button>
+
+      <div>
+        <ToasT></ToasT>
+      </div>
     </div>
   );
 };
